@@ -44,7 +44,7 @@ class DataprocOperationBaseOperator(BaseOperator):
                  delegate_to=None,
                  *args,
                  **kwargs):
-        super().__init__(*args, **kwargs)
+        super(DataprocOperationBaseOperator).__init__(*args, **kwargs)
         self.gcp_conn_id = gcp_conn_id
         self.delegate_to = delegate_to
         self.project_id = project_id
